@@ -20,7 +20,7 @@ web1:
         - curl # for composer
         - zip # for composer
     before_deploy:
-        - "php artisan migrate"
+        - "php artisan migrate --env=pagoda"
     after_deploy:
         - "rm -f app/storage/cache/*"
         - "rm -f app/storage/views/*"

@@ -1,7 +1,7 @@
 radiate
 =======
 
-A Laravel 4 starter package with HTML5 Boiler Plate, Twitter Bootstrap, Font Awesome SCSS support and a pagodabox Boxfile. 
+A Laravel 4 starter package with HTML5 Boiler Plate, Twitter Bootstrap, Font Awesome, SCSS support and a pagodabox Boxfile. 
 
 ## What's been added
 
