@@ -1,31 +1,22 @@
-global:
-        env:
-            - LARAVEL_ENV: pagoda
 web1:
-    name: l4-web
-    shared_writable_dirs:
-        - app/storage/cache
-        - app/storage/logs
-        - app/storage/meta
-        - app/storage/sessions
-        - app/storage/views
-    document_root: /public
-    php_display_errors: "0"
-    php_version: 5.3.8
-    php_extensions:
-        - pdo_mysql
-        - mcrypt
-        - eaccelerator
-        - memcached
-        - curl # for composer
-        - zip # for composer
-    before_deploy:
-        - "php artisan migrate --env=pagoda"
-    after_deploy:
-        - "rm -f app/storage/cache/*"
-        - "rm -f app/storage/views/*"
-    after_build:
-        - "if [ ! -f composer.phar ]; then curl -s http://getcomposer.org/installer | php; fi; php composer.phar install"
-db1:
-    name: l4-db
-    type: mysql
+  shared_writable_dirs:
+    - app/storage/cache
+    - app/storage/logs
+    - app/storage/meta
+    - app/storage/sessions
+    - app/storage/views
+  document_root: public
+  php_display_errors: "0"
+  php_version: 5.3.8
+  php_extensions:
+    - apc
+    - mcrypt
+    - memcached
+    - pdo_mysql
+  after_build:
+    - "if [ ! -f composer.phar ]; then curl -s http://getcomposer.org/installer | php; fi; php composer.phar install"
+  before_deploy:
+    - "php artisan migrate"
+  after_deploy:
+    - "rm -f app/storage/cache/*"
+    - "rm -f app/storage/views/*"
