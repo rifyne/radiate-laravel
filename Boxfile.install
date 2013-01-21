@@ -3,10 +3,6 @@ global:
     - LARAVEL_ENV: pagoda
 web1:
   php_extensions:
-    - pdo_mysql
-    - mcrypt
-    - eaccelerator
-    - memcahced
     - bz2
     - curl
     - rar
