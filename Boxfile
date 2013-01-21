@@ -24,7 +24,7 @@ web1:
   after_build:
     - "if [ ! -f composer.phar ]; then curl -s http://getcomposer.org/installer | php; fi; php composer.phar install"
   before_deploy:
-    - "php artisan migrate --env=pagoda"
+    - "php artisan migrate"
   after_deploy:
     - "rm -f app/storage/cache/*"
     - "rm -f app/storage/views/*"

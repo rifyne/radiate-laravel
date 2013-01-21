@@ -18,7 +18,8 @@
 
         <link rel="stylesheet" href="{{ asset('assets/styles/plugins/normalize.css')}} ">
         <link rel="stylesheet" href="{{ asset('assets/styles/shared/main.css')}} ">
-
+        <link href="{{ asset('assets/styles/plugins/bootstrap.css') }}" rel="stylesheet">
+        <link href="{{ asset('assets/styles/plugins/bootstrap-responsive.css') }}" rel="stylesheet">
 
         <script src="{{ asset('assets/scripts/js/vendor/modernizr-2.6.2.min.js') }}"></script>
 
@@ -56,7 +57,7 @@
 
         <script src="{{ asset('assets/scripts/js/plugins.js') }}"></script>
         <script src="{{ asset('assets/scripts/js/main.js') }}"></script>
-
+        <script src="{{ asset('assets/scripts/js/vendor/bootstrap.min.js') }}"></script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
