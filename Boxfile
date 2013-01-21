@@ -1,3 +1,6 @@
+global:
+  env:
+    - LARAVEL_ENV: pagoda
 web1:
   shared_writable_dirs:
     - app/storage/cache
@@ -13,6 +16,10 @@ web1:
     - mcrypt
     - memcached
     - pdo_mysql
+    - bz2
+    - curl
+    - rar
+    - zip
   after_build:
     - "if [ ! -f composer.phar ]; then curl -s http://getcomposer.org/installer | php; fi; php composer.phar install"
   before_deploy:
@@ -20,3 +27,5 @@ web1:
   after_deploy:
     - "rm -f app/storage/cache/*"
     - "rm -f app/storage/views/*"
+db1:
+  type: mysql
