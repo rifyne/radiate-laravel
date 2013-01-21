@@ -16,19 +16,24 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
+        <!-- CSS -->
         <link rel="stylesheet" href="{{ asset('assets/styles/plugins/normalize.css')}} ">
         <link rel="stylesheet" href="{{ asset('assets/styles/shared/main.css')}} ">
-        <link href="{{ asset('assets/styles/plugins/bootstrap.css') }}" rel="stylesheet">
-        <link href="{{ asset('assets/styles/plugins/bootstrap-responsive.css') }}" rel="stylesheet">
+        <link href="{{ asset('assets/styles/plugins/bootstrap.min.css') }}" rel="stylesheet">
+        <link href="{{ asset('assets/styles/plugins/bootstrap-responsive.min.css') }}" rel="stylesheet">
+        <link href="{{ asset('assets/styles/plugins/font-awesome.min.css') }}" rel="stylesheet">
 
+        <!-- JS -->
         <script src="{{ asset('assets/scripts/js/vendor/modernizr-2.6.2.min.js') }}"></script>
 
-        <!-- Favicons -->
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ asset('assets/ico/apple-touch-icon-144-precomposed.png') }}">
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ asset('assets/ico/apple-touch-icon-114-precomposed.png') }}">
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ asset('assets/ico/apple-touch-icon-72-precomposed.png') }}">
-        <link rel="apple-touch-icon-precomposed" href="{{ asset('assets/ico/apple-touch-icon-57-precomposed.png') }}">
-        <link rel="shortcut icon" href="{{ asset('assets/ico/favicon.png') }}">
+        <!-- Images -->
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ asset('assets/images/apple-touch-icon-144-precomposed.png') }}">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ asset('assets/images/apple-touch-icon-114-precomposed.png') }}">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ asset('assets/images/apple-touch-icon-72-precomposed.png') }}">
+        <link rel="apple-touch-icon-precomposed" href="{{ asset('assets/images/apple-touch-icon-57-precomposed.png') }}">
+
+        <!-- ICO -->
+        <link rel="shortcut icon" href="favicon.png">
 
 
     </head>
@@ -38,7 +43,7 @@
         <![endif]-->
 
         <!-- Navbar -->
-        <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar navbar-fixed-top" style="-webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0;">
             <div class="navbar-inner">
                 <div class="container">
                     <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -49,7 +54,7 @@
 
                     <div class="nav-collapse collapse">
                         <ul class="nav">
-                            <li {{ (Request::is('/') ? 'class="active"' : '') }}><a href="{{ URL::to('') }}">Home</a></li>
+                            <li {{ (Request::is('/') ? 'class="active"' : '') }}><a href="{{ URL::to('') }}"><i class="icon-home"></i> Home</a></li>
                         </ul>
 
                         <ul class="nav pull-right">
