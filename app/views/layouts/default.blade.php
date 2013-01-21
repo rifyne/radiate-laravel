@@ -37,6 +37,40 @@
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
+        <!-- Navbar -->
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li {{ (Request::is('/') ? 'class="active"' : '') }}><a href="{{ URL::to('') }}">Home</a></li>
+                        </ul>
+
+                        <ul class="nav pull-right">
+                            @if (Auth::check())
+                            <li class="navbar-text">Logged in as {{ Auth::user()->fullName() }}</li>
+                            <li class="divider-vertical"></li>
+                            <li {{ (Request::is('account') ? 'class="active"' : '') }}><a href="{{ URL::to('account') }}">Account</a></li>
+                            <li><a href="{{ URL::to('account/logout') }}">Logout</a></li>
+                            @else
+                            <li {{ (Request::is('account/login') ? 'class="active"' : '') }}><a href="{{ URL::to('account/login') }}">Login</a></li>
+                            <li {{ (Request::is('account/register') ? 'class="active"' : '') }}><a href="{{ URL::to('account/register') }}">Register</a></li>
+                            @endif
+                        </ul>
+                    </div>
+                    <!-- ./ nav-collapse -->
+                </div>
+            </div>
+        </div>
+        <!-- ./ navbar -->
+        
+
         <!-- Add your site or application content here -->
         <!-- Container -->
         <div class="container">
