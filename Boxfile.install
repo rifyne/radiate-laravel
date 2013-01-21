@@ -10,6 +10,7 @@ web1:
     - zip
   before_deploy:
     - "php artisan migrate:install --env=pagoda"
+    -  "php artisan db:seed"
 
 db1:
   type: mysql
