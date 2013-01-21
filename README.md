@@ -1,7 +1,6 @@
 radiate
 =======
-
-A Laravel 4 starter package with HTML5 Boiler Plate, Twitter Bootstrap, Font Awesome, SCSS support and a pagodabox Boxfile. 
+My soon to be Laravel 4 starter package with HTML5 Boiler Plate, Twitter Bootstrap, Font Awesome, SCSS support and a pagodabox Boxfile. (in the works as we speak...)
 
 ## Tell me more...
 
@@ -14,6 +13,4 @@ Radiate is a [laravel 4](http://laravel.com) project that uses sensible defaults
 * All CSS is available in SCSS and uses best practices from the [github](https://github.com/styleguide/css) and [google](http://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml) style guides.
 
 * A Boxfile for those hosting their project on (setup to run composer after build)
-
-
 
