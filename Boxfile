@@ -2,6 +2,7 @@ global:
   env:
     - LARAVEL_ENV: pagoda
 web1:
+  name: l4-web
   shared_writable_dirs:
     - app/storage/cache
     - app/storage/logs
@@ -28,4 +29,5 @@ web1:
     - "rm -f app/storage/cache/*"
     - "rm -f app/storage/views/*"
 db1:
+  name: l4-db
   type: mysql
