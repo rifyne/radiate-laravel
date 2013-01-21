@@ -1,9 +1,8 @@
 <?php
 
 return array(
-
   'connections' => array(
-		'mysql' => array(
+  		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => $_SERVER['DB1_HOST'],
 			'database'  => $_SERVER['DB1_NAME'],
@@ -13,6 +12,5 @@ return array(
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
 		),
-
 	)
 );
