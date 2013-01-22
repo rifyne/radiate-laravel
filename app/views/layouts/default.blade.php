@@ -8,7 +8,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>
             @section('title')
-            Radiate
+            Laravel Radiate
             @show
         </title>
         <meta name="description" content="">
@@ -18,10 +18,12 @@
 
         <!-- CSS -->
         <link rel="stylesheet" href="{{ asset('assets/styles/plugins/normalize.css')}} ">
-        <link rel="stylesheet" href="{{ asset('assets/styles/shared/main.css')}} ">
         <link href="{{ asset('assets/styles/plugins/bootstrap.min.css') }}" rel="stylesheet">
         <link href="{{ asset('assets/styles/plugins/bootstrap-responsive.min.css') }}" rel="stylesheet">
         <link href="{{ asset('assets/styles/plugins/font-awesome.min.css') }}" rel="stylesheet">
+        <link rel="stylesheet" href="{{ asset('assets/styles/plugins/boilerplate-pre.css')}} ">
+        <link rel="stylesheet" href="{{ asset('assets/styles/shared/main.css')}} ">
+        <link rel="stylesheet" href="{{ asset('assets/styles/plugins/boilerplate-post.css')}} ">
 
         <!-- JS -->
         <script src="{{ asset('assets/scripts/js/vendor/modernizr-2.6.2.min.js') }}"></script>
@@ -59,13 +61,13 @@
 
                         <ul class="nav pull-right">
                             @if (Auth::check())
-                            <li class="navbar-text">Logged in as {{ Auth::user()->fullName() }}</li>
-                            <li class="divider-vertical"></li>
-                            <li {{ (Request::is('account') ? 'class="active"' : '') }}><a href="{{ URL::to('account') }}">Account</a></li>
-                            <li><a href="{{ URL::to('account/logout') }}">Logout</a></li>
+                                <li class="navbar-text">Logged in as {{ Auth::user()->fullName() }}</li>
+                                <li class="divider-vertical"></li>
+                                <li {{ (Request::is('account') ? 'class="active"' : '') }}><a href="{{ URL::to('account') }}">Account</a></li>
+                                <li><a href="{{ URL::to('account/logout') }}">Logout</a></li>
                             @else
-                            <li {{ (Request::is('account/login') ? 'class="active"' : '') }}><a href="{{ URL::to('account/login') }}">Login</a></li>
-                            <li {{ (Request::is('account/register') ? 'class="active"' : '') }}><a href="{{ URL::to('account/register') }}">Register</a></li>
+                                <li {{ (Request::is('account/login') ? 'class="active"' : '') }}><a href="{{ URL::to('account/login') }}">Login</a></li>
+                                <li {{ (Request::is('account/register') ? 'class="active"' : '') }}><a href="{{ URL::to('account/register') }}">Register</a></li>
                             @endif
                         </ul>
                     </div>
