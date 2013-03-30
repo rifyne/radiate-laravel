@@ -11,3 +11,8 @@ Radiate is a [laravel 4](http://laravel.com) project that uses sensible defaults
 * [Twitter Bootstrap](twitter.github.com/bootstrap/) css and js with support for [font awesome](https://github.com/FortAwesome/Font-Awesome).
 
 * A Boxfile and Boxfile.install is included for those hosting their project on [pagodabox.com](http://pagodabox.com).
+
+
+
+## Laravel 4 Version
+*Updated March 29, 2013*
