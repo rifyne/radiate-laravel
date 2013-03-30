@@ -1,0 +1,34 @@
+
+@import "normalize";
+@import "twitter-bootstrap/bootstrap";
+@import "twitter-bootstrap/responsive";
+@import "font-awesome";
+@import "h5bp-pre";
+
+/*
+|--------------------------------------------------------------------------
+| General Styles
+|--------------------------------------------------------------------------
+*/
+body {
+  padding-top: 60px;
+}
+
+
+
+
+/*
+|--------------------------------------------------------------------------
+| Media Quries
+|--------------------------------------------------------------------------
+*/
+@media (max-width: 979px) {
+  body {
+    padding-top: 0;
+  }
+}
+
+
+
+
+@import "h5bp-post";
