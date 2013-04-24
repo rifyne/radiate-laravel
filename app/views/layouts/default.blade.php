@@ -27,7 +27,7 @@
         <link rel="apple-touch-icon-precomposed" href="{{ asset('assets/images/apple-touch-icon-57-precomposed.png') }}">
 
         <!-- ICO -->
-        <link rel="shortcut icon" href="favicon.png">
+        <link rel="shortcut icon" href="favicon.ico">
 
 
     </head>
