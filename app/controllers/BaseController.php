@@ -1,22 +1,10 @@
 <?php
 
-class BaseController extends Controller
-{
-	/**
-	 * Initializer.
-	 *
-	 * @access   public
-	 * @return   void
-	 */
-	public function __construct()
-	{
-		$this->beforeFilter('csrf', array('on' => 'post'));
-	}
+class BaseController extends Controller {
 
 	/**
 	 * Setup the layout used by the controller.
 	 *
-	 * @access protected
 	 * @return void
 	 */
 	protected function setupLayout()
@@ -26,4 +14,5 @@ class BaseController extends Controller
 			$this->layout = View::make($this->layout);
 		}
 	}
+
 }
