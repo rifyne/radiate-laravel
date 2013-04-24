@@ -1,18 +1,28 @@
 radiate
 =======
-A Laravel 4 starter package with HTML5 Boiler Plate, Twitter Bootstrap, Font Awesome, and a quick little login/register script to get you started. It also includes a Boxfile for those who deploy to pagodabox.
+A Laravel 4 starter package with HTML5 Boiler Plate, Twitter Bootstrap, Font Awesome, SASS, and a quick little login/register script to get you started. Nothing else (but a Boxfile for those who deploy to pagodabox)
 
-## Tell me more...
+### Tell me more...
 
-Radiate is a [laravel 4](http://laravel.com) project that uses sensible defaults when creating new HTML5/php projects. Here is how it was created:
+Radiate is a [laravel 4](http://four.laravel.com) project that uses sensible defaults when creating new HTML5/php projects. No packages were included, it's just a quick mod to the html/php to gain a few features often used by devs.
 
-* The [HTML5 BoilerPlate](http://html5boilerplate.com/) index.html file was turned into a view layout using blade templating; and the js, css, ico, and img files have been added to their corresponding asset directory. (Note: the suggested .htaccess code has also been implemented)
+### How it was Created
 
-* [Twitter Bootstrap](twitter.github.com/bootstrap/) css and js with support for [font awesome](https://github.com/FortAwesome/Font-Awesome).
+* The index.html file from [HTML5 BoilerPlate](http://html5boilerplate.com/) was turned into a view layout using blade templating. 
+
+* The js, css, ico, and img files of H5BP have been added to their corresponding asset directory (assets directory structured per [github style guide](https://github.com/styleguide).
+
+* The suggested .htaccess file from H5BP is included.
+
+* [Twitter Bootstrap](twitter.github.com/bootstrap/) css and js (sassy!)
+
+* [font awesome](https://github.com/FortAwesome/Font-Awesome) support (sassy too!)
 
 * A Boxfile and Boxfile.install is included for those hosting their project on [pagodabox.com](http://pagodabox.com).
 
 
 
-## Laravel 4 Version
-*Updated March 29, 2013*
+## Updates
+* Updated April 23, 2013 (latest Laravel beta)
+
+* Updated March 29, 2013 (latest Laravel beta)
