@@ -27,7 +27,8 @@ Radiate is a [laravel 4](http://four.laravel.com) project that uses sensible def
 2. cd into www `cd www`
 3. call composer update `composer update`
 4. start a server to make sure it's all good: `php artisan serve`
-5. Get to work 
+5. setup new key: `php artisan key:generate`
+6. Get to work
 
 
 ## Updates
