@@ -26,7 +26,7 @@ Radiate is a [laravel 4](http://four.laravel.com) project that uses sensible def
 1. Clone the code into your web dev environment: `git clone git@github.com:cborgia/radiate.git www`
 2. cd into www `cd www`
 3. call composer update `composer update`
-4. start a server to make sure it's all good: `php -S localhost:8000`
+4. start a server to make sure it's all good: `php artisan serve`
 5. Get to work 
 
 
