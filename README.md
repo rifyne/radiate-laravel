@@ -32,6 +32,6 @@ Radiate is a [laravel 4](http://four.laravel.com) project that uses sensible def
 
 
 ## Updates
+* Updated May 5, 2013 (latest Laravel beta)
 * Updated April 23, 2013 (latest Laravel beta)
-
 * Updated March 29, 2013 (latest Laravel beta)
