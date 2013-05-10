@@ -27,7 +27,7 @@ $app = new Illuminate\Foundation\Application;
 $env = $app->detectEnvironment(array(
 
 	'local' => array('your-machine-name'),
-	'pagodabox' => array('*.pagodabox.com'),
+	'pagoda' => array('*.pagodabox.com'),
 
 ));
 
