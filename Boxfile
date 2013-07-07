@@ -1,4 +1,8 @@
 web1:
+  apache_access_log: false
+  apache_error_log: true
+  php_error_log: true
+  php_fpm_log: true
   document_root: public
   php_version: 5.4.14
   shared_writable_dirs:
@@ -15,6 +19,7 @@ web1:
     - pdo_mysql
     - redis
     - rar
+    - xcache
     - zip
   php_session_save_handler: redis
   php_session_save_path: "tcp://tunnel.pagodabox.com:6379"
