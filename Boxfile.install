@@ -1,7 +1,6 @@
 global:
   env:
     - LARAVEL_ENV: pagoda
-
 web1:
   php_extensions:
     - bz2
@@ -10,9 +9,7 @@ web1:
     - zip
   before_deploy:
     - "php artisan migrate:install --env=pagoda"
-
 db1:
   type: mysql
-
 cache1:
   type: redis
