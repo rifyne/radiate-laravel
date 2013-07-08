@@ -12,13 +12,10 @@ web1:
     - app/storage/sessions
     - app/storage/views
   php_extensions:
-    - apc
-    - bcmath
+    - mbstring
     - mcrypt
-    - memcached
     - pdo_mysql
     - redis
-    - rar
     - xcache
     - zip
   php_session_save_handler: redis
@@ -30,5 +27,6 @@ web1:
   after_deploy:
     - "rm -f app/storage/cache/*"
     - "rm -f app/storage/views/*"
+    - "php artisan cache:clear"
 cache1:
   type: redis

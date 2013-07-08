@@ -11,5 +11,3 @@ web1:
     - "php artisan migrate:install --env=pagoda"
 db1:
   type: mysql
-cache1:
-  type: redis
