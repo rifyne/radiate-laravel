@@ -39,7 +39,8 @@ Radiate is a [laravel 4](http://four.laravel.com) project that uses sensible def
 * Make local dev detection more robust
 * Use Bower to manage asset updates
 * Create a Contact and About Page
-
+* Test on new pagodabox (v2)
+* Merge develop into Master
 
 ## Updates
 * Updated August 13, 2014 (latest Laravel: 4.2)
