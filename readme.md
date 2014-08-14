@@ -30,8 +30,19 @@ Radiate is a [laravel 4](http://four.laravel.com) project that uses sensible def
 5. setup new key: `php artisan key:generate`
 6. Get to work
 
+## To Do (In August 2014):
+* Update font awesome
+* Update h5bp code
+* Rework asset directory
+* Add a gulpfile for asset compiling and browser syncing
+* Add IDE Helper
+* Make local dev detection more robust
+* Use Bower to manage asset updates
+* Create a Contact and About Page
+
 
 ## Updates
+* Updated August 13, 2014 (latest Laravel: 4.2)
 * Updated July 7, 2013 (latest Laravel beta)
 * Updated May 5, 2013 (latest Laravel beta)
 * Updated April 23, 2013 (latest Laravel beta)
