@@ -42,6 +42,7 @@ _(you'll need to setup your ENV and migrate the user table to the DB if you want
 * Merge develop into Master
 
 ## Updates
+* Updated November 29, 2014 (latest Laravel: 4.2.11)
 * Updated August 13, 2014 (latest Laravel: 4.2)
 * Updated July 7, 2013 (latest Laravel beta)
 * Updated May 5, 2013 (latest Laravel beta)
