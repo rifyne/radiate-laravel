@@ -23,10 +23,12 @@ Radiate is a [laravel 4](http://four.laravel.com) project that uses sensible def
 
 1. Clone the code into your web dev environment: `git clone git@github.com:cborgia/radiate.git www`
 2. cd into www `cd www`
-3. call composer update `composer update`
+3. call composer update `composer update --no-scripts`
 4. start a server to make sure it's all good: `php artisan serve`
 5. setup new key: `php artisan key:generate`
 6. Get to work
+
+_(you'll need to setup your ENV and migrate the user table to the DB if you want to capture data from the user registrations form)._
 
 ## To Do (In Nov 2014):
 * Update font awesome
@@ -37,7 +39,6 @@ Radiate is a [laravel 4](http://four.laravel.com) project that uses sensible def
 * Make local dev detection more robust
 * Use Bower to manage asset updates
 * Create a Contact and About Page
-* Test on new pagodabox (v2)
 * Merge develop into Master
 
 ## Updates
