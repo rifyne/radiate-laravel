@@ -1,6 +1,6 @@
 radiate
 =======
-A Laravel 4 starter package with HTML5 Boiler Plate, Twitter Bootstrap, Font Awesome, SASS, and a quick little login/register script to get you started. Nothing else (but a Boxfile for those who deploy to pagodabox)
+A Laravel 4 starter package with HTML5 Boiler Plate, Twitter Bootstrap, Font Awesome, SASS, and a quick little login/register script to get you started. Nothing else.
 
 ### Tell me more...
 
@@ -8,7 +8,7 @@ Radiate is a [laravel 4](http://four.laravel.com) project that uses sensible def
 
 ### How it was Created
 
-* The index.html file from [HTML5 BoilerPlate](http://html5boilerplate.com/) was turned into a view layout using blade templating. 
+* The index.html file from [HTML5 BoilerPlate](http://html5boilerplate.com/) (H5BP) was turned into a view layout using blade templating. 
 
 * The js, css, ico, and img files of H5BP have been added to their corresponding asset directory (assets directory structured per [github style guide](https://github.com/styleguide).
 
@@ -17,8 +17,6 @@ Radiate is a [laravel 4](http://four.laravel.com) project that uses sensible def
 * [Twitter Bootstrap](twitter.github.com/bootstrap/) css and js (sassy!)
 
 * [font awesome](https://github.com/FortAwesome/Font-Awesome) support (sassy too!)
-
-* A Boxfile and Boxfile.install is included for those hosting their project on [pagodabox.com](http://pagodabox.com).
 
 
 ## How to use
@@ -30,7 +28,7 @@ Radiate is a [laravel 4](http://four.laravel.com) project that uses sensible def
 5. setup new key: `php artisan key:generate`
 6. Get to work
 
-## To Do (In August 2014):
+## To Do (In Nov 2014):
 * Update font awesome
 * Update h5bp code
 * Rework asset directory
