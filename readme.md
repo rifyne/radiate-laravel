@@ -1,6 +1,6 @@
 radiate
 =======
-A Laravel 4 starter package with HTML5 Boiler Plate, Twitter Bootstrap, Font Awesome, SASS, and a quick little login/register script to get you started. Nothing else (but a Boxfile for those who deploy to pagodabox)
+A Laravel 4 starter package with HTML5 Boiler Plate, Twitter Bootstrap, Font Awesome, SASS, and a quick little login/register script to get you started. Nothing else.
 
 ### Tell me more...
 
@@ -8,7 +8,7 @@ Radiate is a [laravel 4](http://four.laravel.com) project that uses sensible def
 
 ### How it was Created
 
-* The index.html file from [HTML5 BoilerPlate](http://html5boilerplate.com/) was turned into a view layout using blade templating. 
+* The index.html file from [HTML5 BoilerPlate](http://html5boilerplate.com/) (H5BP) was turned into a view layout using blade templating. 
 
 * The js, css, ico, and img files of H5BP have been added to their corresponding asset directory (assets directory structured per [github style guide](https://github.com/styleguide).
 
@@ -18,19 +18,19 @@ Radiate is a [laravel 4](http://four.laravel.com) project that uses sensible def
 
 * [font awesome](https://github.com/FortAwesome/Font-Awesome) support (sassy too!)
 
-* A Boxfile and Boxfile.install is included for those hosting their project on [pagodabox.com](http://pagodabox.com).
-
 
 ## How to use
 
 1. Clone the code into your web dev environment: `git clone git@github.com:cborgia/radiate.git www`
 2. cd into www `cd www`
-3. call composer update `composer update`
+3. call composer update `composer update --no-scripts`
 4. start a server to make sure it's all good: `php artisan serve`
 5. setup new key: `php artisan key:generate`
 6. Get to work
 
-## To Do (In August 2014):
+_(you'll need to setup your ENV and migrate the user table to the DB if you want to capture data from the user registrations form)._
+
+## To Do (In Nov 2014):
 * Update font awesome
 * Update h5bp code
 * Rework asset directory
@@ -39,10 +39,10 @@ Radiate is a [laravel 4](http://four.laravel.com) project that uses sensible def
 * Make local dev detection more robust
 * Use Bower to manage asset updates
 * Create a Contact and About Page
-* Test on new pagodabox (v2)
 * Merge develop into Master
 
 ## Updates
+* Updated November 29, 2014 (latest Laravel: 4.2.11)
 * Updated August 13, 2014 (latest Laravel: 4.2)
 * Updated July 7, 2013 (latest Laravel beta)
 * Updated May 5, 2013 (latest Laravel beta)
