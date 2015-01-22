@@ -7,4 +7,7 @@ composer.lock
 .DS_Store
 Thumbs.db
 
-.sass-cache
+**/.sass-cache/*
+node_modules
+_ide_helper.php
+.idea
