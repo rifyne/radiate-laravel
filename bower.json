@@ -1,0 +1,31 @@
+{
+  "name": "radiate",
+  "version": "2.0.0",
+  "homepage": "https://github.com/cborgia/radiate",
+  "authors": [
+    "Chris Borgia <chris@cborgia.me>"
+  ],
+  "description": "laravel 4 project starter with bootstrap, scss, font awesome and bower",
+  "keywords": [
+    "laravel",
+    "php",
+    "bootstrap",
+    "bower",
+    "scss"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/assets/vendor",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "~3.3.1",
+    "bootstrap-sass-official": "~3.3.1",
+    "fontawesome": "~4.2.0",
+    "modernizr": "~2.8.3"
+  }
+}
