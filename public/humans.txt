@@ -1,15 +1,25 @@
 # humanstxt.org/
 # The humans responsible & technology colophon
+                  
+/* TEAM */
+    Title:Your Name
+    Contact: hello [at] example.com
+    Twitter: @your_username
+    From: City, State
 
-# TEAM
+/* THANKS */
+    Laravel Creator:Taylor Otwell
+    Contact: taylorotwell [at] gmail.com
+    Twitter: @taylorotwell
 
-    <name> -- <role> -- <twitter>
+    Radiate Creator:Chris Borgia
+    Contact: hello [at] cborgia.me
+    Twitter: @cborgia
+    From: Miami, Florida
 
-# THANKS
-
-    Chris Borgia, for the Radiate Laravel 4 Starter Package (http://github.com/ChrisBorgia/radiate)
-
-# TECHNOLOGY COLOPHON
-
-    HTML5, CSS3
-    jQuery, Modernizr
+/* SITE */
+    Last update: 2015/01/01 
+    Doctype: HTML5
+    Styles: Bootstrap
+    Scripts: Bootstrap, jQuery, Modernizr
+    IDE: Sublime Text
