@@ -11,5 +11,17 @@
 |
 */
 
-Route::controller('account', 'AccountController');
-Route::controller('/', 'HomeController');
+Route::get('/', ['as' => 'home', 'uses' => 'PagesController@home']);
+Route::get('about', ['as' => 'about', 'uses' => 'PagesController@about']);
+Route::get('contact', ['as' => 'contact', 'uses' => 'PagesController@contact']);
+
+
+// Account
+Route::get('account', ['as' => 'account', 'uses' => 'AccountController@index']);
+Route::get('register', ['as' => 'account.create', 'uses' => 'AccountController@create']);
+Route::post('register', ['as' => 'account.store', 'uses' => 'AccountController@store']);
+
+// Session
+Route::get('login', ['as' => 'login', 'uses' => 'SessionController@create']);
+Route::get('logout', 'SessionController@destroy');
+Route::resource('session', 'SessionController', ['only' => ['create', 'store', 'destroy']]);

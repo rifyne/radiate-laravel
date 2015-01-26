@@ -11,9 +11,7 @@
 @section('content')
 <div class="container">
     <div class="page-header">
-        <h1>Account: </h1>
+        <h1>About</h1>
     </div>
-    <p>Name: {{ Auth::user()->name }}</p>
-    <p>Email: {{ Auth::user()->email }}</p>
 </div>
 @stop
