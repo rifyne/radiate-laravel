@@ -27,8 +27,8 @@ gulp.task('js', function () {
         .pipe(gulp.dest('public/assets/js'));
 });
 
-gulp.task('sass', function() {
-    gulp.src('app/assets/styles/**/*.scss')
+gulp.task('styles', function() {
+    gulp.src('app/assets/styles/main.scss')
         .pipe(sass())
         .on('error', swallowError)
         .pipe(autoprefixer('last 10 version'))
@@ -37,8 +37,8 @@ gulp.task('sass', function() {
         .pipe(reload({stream:true}));
 });
 
-gulp.task('watch', ['sass', 'js'], function(){
-    gulp.watch('app/assets/styles/app.scss', ['sass']);
+gulp.task('watch', ['styles', 'js'], function(){
+    gulp.watch('app/assets/styles/**/*.scss', ['styles']);
     gulp.watch('app/assets/scripts/*.js', ['js']);
     gulp.watch("app/views/**/*", ['bs-reload']);
 })
