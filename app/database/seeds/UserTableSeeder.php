@@ -5,9 +5,9 @@ class UserTableSeeder extends Seeder {
     public function run()
     {
         User::create([
-            'name'      => 'chris',
-            'email'     => 'chris@cborgia.me',
-            'password'  => 'test'
+            'name'      => 'example',
+            'email'     => 'example@example.com',
+            'password'  => 'example'
         ]);
 
         $faker = Faker\Factory::create();
