@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
         <title>
-        Radiate @yield('title')
+        @yield('title') | Radiate
         </title>
 
         <meta name="description" content="">
