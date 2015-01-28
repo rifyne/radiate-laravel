@@ -1,6 +1,6 @@
 radiate
 =======
-A Laravel 4 starter package with HTML5 Boiler Plate, Twitter Bootstrap, Font Awesome, SASS, and a quick little login/register script to get you started. Nothing else.
+A Laravel 4 starter package with HTML5 Boiler Plate, Bootstrap, Font Awesome, SASS, and a quick little login/register script to get you started. Nothing else.
 
 ### Tell me more...
 
@@ -14,7 +14,7 @@ Radiate is a [laravel 4](http://four.laravel.com) project that uses sensible def
 
 * The suggested .htaccess file from H5BP is included.
 
-* [Twitter Bootstrap](twitter.github.com/bootstrap/) css and js (sassy!)
+* [Bootstrap](getbootstrap.com) css and js (sassy!)
 
 * [font awesome](https://github.com/FortAwesome/Font-Awesome) support (sassy too!)
 
@@ -28,20 +28,15 @@ Radiate is a [laravel 4](http://four.laravel.com) project that uses sensible def
 5. setup new key: `php artisan key:generate`
 6. Get to work
 
+## GULP
+
+Gulp support was added in v2, to use gulp with radiate please make sure you have gulp installed globally, run `npm install` and edit gulpfile.js to taste (the only thing that needs to be edited is the browsersync proxy address).
+
 _(you'll need to setup your ENV and migrate the user table to the DB if you want to capture data from the user registrations form)._
 
-## To Do (In Nov 2014):
-* Update font awesome
-* Update h5bp code
-* Rework asset directory
-* Add a gulpfile for asset compiling and browser syncing
-* Add IDE Helper
-* Make local dev detection more robust
-* Use Bower to manage asset updates
-* Create a Contact and About Page
-* Merge develop into Master
 
 ## Updates
+* Updated Jan 27, 2015 (major revision, latest Laravel: 4.2.16)
 * Updated November 29, 2014 (latest Laravel: 4.2.11)
 * Updated August 13, 2014 (latest Laravel: 4.2)
 * Updated July 7, 2013 (latest Laravel beta)
