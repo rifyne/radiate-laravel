@@ -41,7 +41,7 @@ gulp.task('watch', ['styles', 'js'], function(){
     gulp.watch('app/assets/styles/**/*.scss', ['styles']);
     gulp.watch('app/assets/scripts/*.js', ['js']);
     gulp.watch("app/views/**/*", ['bs-reload']);
-})
+});
 
 gulp.task('default', ['watch', 'browser-sync']);
 
