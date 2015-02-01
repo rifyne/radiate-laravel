@@ -15,11 +15,8 @@ var browserSync  = require('browser-sync');
 var reload       = browserSync.reload;
 
 // browser-sync task for starting the server.
-gulp.task('browser-sync', function() {
-    browserSync({
-        proxy: 'radiate.dev',
-        notify: false
-    });
+gulp.task('serve', function() {
+    startBrowserSync();
 });
 
 gulp.task('bs-reload', function () {
@@ -43,7 +40,7 @@ gulp.task('vet', function() {
 gulp.task('scripts', function () {
     gulp.src('app/assets/scripts/*.js')
         .pipe(uglify())
-        .pipe(concat('app/assets/js/app.js'))
+        .pipe(concat('main.js'))
         .pipe(gulp.dest('public/assets/js'));
 });
 
@@ -59,11 +56,13 @@ gulp.task('styles', function() {
 
 gulp.task('watch', ['styles', 'scripts'], function() {
     gulp.watch('app/assets/styles/**/*.scss', ['styles']);
-    gulp.watch('app/assets/scripts/*.js', ['js']);
+    gulp.watch('app/assets/scripts/*.js', ['scripts']);
     gulp.watch('app/views/**/*', ['bs-reload']);
 });
 
-gulp.task('default', ['watch', 'browser-sync']);
+gulp.task('default', ['watch', 'serve']);
+
+// Funtions to support the above gulp api
 
 function swallowError (error) {
     console.log(error.toString());
@@ -80,4 +79,30 @@ function log(msg) {
     } else {
         util.log(util.colors.blue(msg));
     }
+}
+
+function startBrowserSync() {
+    if (browserSync.active) {
+        return;
+    }
+
+    log('Starting BrowerSync on port');
+
+    var options = {
+        proxy: 'radiate.dev',
+        ghostMode: {
+            clicks: true,
+            forms: true,
+            scroll: true,
+            location: false
+        },
+        injectChanges: true,
+        logFileChanges: true,
+        logLevel: 'debug',
+        logPrefix: 'gulp-radiate',
+        notify: false,
+        reloadDelay: 500
+    };
+
+    browserSync(options);
 }
