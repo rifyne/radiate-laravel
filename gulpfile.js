@@ -6,13 +6,16 @@ var echo         = require('gulp-print');
 var gulpif       = require('gulp-if');
 var argv         = require('yargs').argv;
 var sass         = require('gulp-sass');
-var gutil        = require('gulp-util');
 var uglify       = require('gulp-uglify');
 var concat       = require('gulp-concat');
 var rename       = require('gulp-rename');
 var autoprefixer = require('gulp-autoprefixer');
 var browserSync  = require('browser-sync');
 var reload       = browserSync.reload;
+
+//  What is the url your site is served from?
+//  we'll use this with BrowswerSync
+var proxy_url = 'radiate.dev';
 
 // browser-sync task for starting the server.
 gulp.task('serve', function() {
@@ -89,7 +92,7 @@ function startBrowserSync() {
     log('Starting BrowerSync on port');
 
     var options = {
-        proxy: 'radiate.dev',
+        proxy: proxy_url,
         ghostMode: {
             clicks: true,
             forms: true,
