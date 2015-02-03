@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html class="no-js" lang="">
+<!doctype html>
+<html class="no-js" lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,7 +17,7 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
         <link rel="icon" href="assets/images/favicon.ico">
-        
+
         <!-- Styles -->
         <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
         <link rel="stylesheet" href="{{asset('assets/css/font-awesome.min.css')}}">
@@ -36,7 +36,7 @@
         @include('partials.header')
         @yield('content')
         @include('partials.footer')
-        
+
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="assets/js/jquery.min.js"><\/script>')</script>
 
@@ -56,4 +56,4 @@
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script>
     </body>
-</html> 
+</html>
