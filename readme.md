@@ -8,7 +8,7 @@ Radiate is a [laravel 4](http://four.laravel.com) project that uses sensible def
 
 ### How it was Created
 
-* The index.html file from [HTML5 BoilerPlate](http://html5boilerplate.com/) (H5BP v5) was turned into a view layout using blade templating. 
+* The index.html file from [HTML5 BoilerPlate](http://html5boilerplate.com/) (H5BP v5) was turned into a view layout using blade templating.
 
 * The js, css, ico, and img files of H5BP have been added to their corresponding asset directory.
 
