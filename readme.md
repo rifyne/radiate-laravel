@@ -1,43 +1,62 @@
-radiate
+Radiate Laravel
 =======
-A Laravel starter package with HTML5 Boiler Plate, Bootstrap, Font Awesome, SCSS, and a quick little login/register script to get you started. Nothing else.
+A Laravel starter preset to bootstrap your new apps.
 
 ### Tell me more...
 
-Radiate is a [laravel 4](http://four.laravel.com) project that uses sensible defaults when creating new HTML5/php projects. No packages were included, it's just a quick mod to the html/php to gain a few features often used by devs.
+Radiate is a [Laravel](http://www.laravel.com) preset that applies sensible defaults when creating new laravel projects. It's just a quick mod to the default laravel install to gain a few features often used by devs.
 
-### How it was Created
+### What's Included
 
-* The index.html file from [HTML5 BoilerPlate](http://html5boilerplate.com/) (H5BP v5) was turned into a view layout using blade templating.
+* add editorconfig file to root
 
-* The js, css, ico, and img files of H5BP have been added to their corresponding asset directory.
-
-* All the dotfiles from h5bp have been included at the root of the project.
-
-* [Bootstrap](getbootstrap.com) css and js (sassy)
+* add eslint support via preconfigred laravel based eslintrc.js file, including vue support.
 
 * [font awesome](https://github.com/FortAwesome/Font-Awesome) support (sassy as well)
 
 
 ## How to use
 
-1. Clone the code into your web dev environment: `git clone git@github.com:cborgia/radiate.git www`
-2. cd into www `cd www`
-3. call composer update `composer update --prefer-source`
-4. start a server to make sure it's all good: `php artisan serve`
-5. setup new key: `php artisan key:generate`
-6. Get to work making something awesome.
+Add this repo to your `composer.json` file in a new laravel app:
 
-_(you'll need to setup your ENV and migrate the user table to the DB if you want to capture data from the user registrations form)._
+```
+"repositories": [
+    {
+        "type": "vcs",
+        "url": "https://github.com/rifyne/laravel-radiate"
+    }
+]
+```
+
+Require the source so it's added to your vendor directory:
+
+```
+composer require rifyne/laravel-radiate --dev
+
+```
+
+Run the radiate artisan command to stub out the contents of this repo
+
+```
+php artisan radiate
+```
+
+
 
 ## GULP
 
-Gulp support was added in Radiate v2, to use gulp with radiate please make sure you have [gulp installed globally](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md), then run `npm install` from the root of your new radiate project. Edit gulpfile.js to taste (the only thing that needs to be edited at the start is the browsersync proxy address).
 
 
 
 
 ## Updates
+__V5__
+* Dec 07 2018
+* Nov 01 2018 refined and renamed
+
+__v3__
+* OCT 2015 WIP
+
 __V2__
 
 * FEB 03, 2015: Version 5 of HTML 5 Boiler Plate tweaks
