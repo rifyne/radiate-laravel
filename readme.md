@@ -38,7 +38,7 @@ composer require rifyne/radiate-laravel --dev
 Run the radiate artisan command to stub out the contents of this repo
 
 ```
-php artisan radiate
+php artisan preset radiate
 ```
 
 
