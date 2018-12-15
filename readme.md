@@ -23,7 +23,7 @@ Add this repo to your `composer.json` file in a new laravel app:
 "repositories": [
     {
         "type": "vcs",
-        "url": "https://github.com/rifyne/laravel-radiate"
+        "url": "https://github.com/rifyne/radiate-laravel"
     }
 ]
 ```
@@ -31,7 +31,7 @@ Add this repo to your `composer.json` file in a new laravel app:
 Require the source so it's added to your vendor directory:
 
 ```
-composer require rifyne/laravel-radiate --dev
+composer require rifyne/radiate-laravel --dev
 
 ```
 
