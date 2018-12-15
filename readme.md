@@ -43,15 +43,10 @@ php artisan radiate
 
 
 
-## GULP
-
-
-
-
 
 ## Updates
 __V5__
-* Dec 07 2018
+* Dec 07 2018, wip work
 * Nov 01 2018 refined and renamed
 
 __v3__
