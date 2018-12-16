@@ -1,0 +1,5 @@
+# Browsers we support via Babel, Autoprefixer etc.
+# https://github.com/ai/browserslist
+
+> 0.25%
+not dead

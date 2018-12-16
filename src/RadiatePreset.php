@@ -25,15 +25,19 @@ class RadiatePreset extends Preset
         static::updateTemplates();
         static::removeNodeModules();
         static::updateGitignore();
+
+        static::dotfiles();
     }
 
     protected static function updatePackageArray(array $packages)
     {
         return array_merge([
-            'laravel-mix-purgecss' => '^2.2',
+            '@babel/preset-env' '^7.2.0',
+            'laravel-mix-purgecss' => '^3.0',
             'postcss-nesting' => '^5.0.0',
             'postcss-import' => '^11.1.0',
-            'tailwindcss' => '>=0.5.3',
+            'prettier' => '^1.10.2',
+            'tailwindcss' => '>=0.6.4',
         ], Arr::except($packages, [
             'bootstrap',
             'bootstrap-sass',
@@ -80,5 +84,13 @@ class RadiatePreset extends Preset
     protected static function updateGitignore()
     {
         copy(__DIR__.'/stubs/gitignore-stub', base_path('.gitignore'));
+    }
+
+    protected static function dotfiles()
+    {
+        copy(__DIR__.'/stubs/babelrc-stub', base_path('.babelrc'));
+        copy(__DIR__.'/stubs/browserslistrc-stub', base_path('.browserslistrc'));
+        copy(__DIR__.'/stubs/prettierignore-stub', base_path('.prettierignore'));
+        copy(__DIR__.'/stubs/prettierrc-stub', base_path('.prettierrc'));
     }
 }
