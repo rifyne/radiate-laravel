@@ -31,7 +31,7 @@ Add this repo to your `composer.json` file in a new laravel app:
 Require the source so it's added to your vendor directory:
 
 ```
-composer require rifyne/radiate-laravel --dev
+composer require rifyne/radiate-laravel
 
 ```
 
